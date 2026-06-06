@@ -1,0 +1,301 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8fbfd;
+    color:#444;
+    line-height:1.6;
+    animation:fadeIn 1s ease-in-out;
+}
+
+/* Page Load Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#b8e3ff,#d8f3dc);
+    color:#2d4f5a;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    animation:slideDown 0.8s ease;
+}
+
+@keyframes slideDown{
+    from{
+        transform:translateY(-50px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+header h1{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+/* Navigation */
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2d4f5a;
+    font-weight:bold;
+    padding:10px 15px;
+    display:inline-block;
+    border-radius:6px;
+    transition:all 0.3s ease;
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:0;
+    height:2px;
+    background:#4a7c8c;
+    transition:all 0.3s ease;
+    transform:translateX(-50%);
+}
+
+nav a:hover::after{
+    width:80%;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.7);
+    transform:translateY(-2px);
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:25px auto;
+}
+
+/* Cards */
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    margin:15px 0;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    transition:all 0.4s ease;
+    animation:cardAppear 0.8s ease;
+}
+
+@keyframes cardAppear{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.card:hover{
+    transform:translateY(-6px) scale(1.01);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    color:#4a7c8c;
+    margin-bottom:10px;
+}
+
+/* Forms */
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    margin-bottom:12px;
+    border:1px solid #cde7f0;
+    border-radius:8px;
+    font-size:14px;
+    transition:all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#8ecae6;
+    box-shadow:0 0 10px rgba(142,202,230,0.5);
+    transform:scale(1.01);
+}
+
+/* Buttons */
+button{
+    background:#8ecae6;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+button:hover{
+    background:#74b9d6;
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+button:active{
+    transform:scale(0.96);
+}
+
+/* Tables */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    margin-top:15px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    animation:fadeIn 1s ease;
+}
+
+table th{
+    background:#8ecae6;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    transition:background 0.3s ease;
+}
+
+table tr:nth-child(even){
+    background:#f4fbff;
+}
+
+table tr:hover{
+    background:#eaf7fc;
+    transform:scale(1.01);
+}
+
+/* Footer */
+.footer{
+    background:linear-gradient(135deg,#b8e3ff,#d8f3dc);
+    color:#2d4f5a;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+    animation:fadeIn 1s ease;
+}
+
+/* Large Screens */
+@media screen and (max-width:1200px){
+    .container{
+        width:95%;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width:768px){
+
+    header h1{
+        font-size:1.6rem;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav a{
+        width:100%;
+        text-align:center;
+        margin:5px 0;
+    }
+
+    .card{
+        padding:18px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    button{
+        width:100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:480px){
+
+    header{
+        padding:15px;
+    }
+
+    header h1{
+        font-size:1.2rem;
+    }
+
+    .container{
+        width:98%;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size:16px;
+    }
+
+    table th,
+    table td{
+        padding:8px;
+        font-size:13px;
+    }
+
+    button{
+        width:100%;
+        padding:12px;
+    }
+
+    .footer{
+        font-size:14px;
+    }
+}
