@@ -11,8 +11,8 @@ html{
 
 body{
     font-family:Arial, sans-serif;
-    background:#f8fbfd;
-    color:#444;
+    background:#f4f9fd;
+    color:#333;
     line-height:1.6;
     animation:fadeIn 1s ease-in-out;
 }
@@ -29,8 +29,8 @@ body{
 
 /* Header */
 header{
-    background:linear-gradient(135deg,#b8e3ff,#d8f3dc);
-    color:#2d4f5a;
+    background:#3498db;
+    color:white;
     padding:20px;
     text-align:center;
     box-shadow:0 2px 8px rgba(0,0,0,0.08);
@@ -60,7 +60,7 @@ nav{
 
 nav a{
     text-decoration:none;
-    color:#2d4f5a;
+    color:white;
     font-weight:bold;
     padding:10px 15px;
     display:inline-block;
@@ -76,7 +76,7 @@ nav a::after{
     bottom:0;
     width:0;
     height:2px;
-    background:#4a7c8c;
+    background:white;
     transition:all 0.3s ease;
     transform:translateX(-50%);
 }
@@ -86,7 +86,7 @@ nav a:hover::after{
 }
 
 nav a:hover{
-    background:rgba(255,255,255,0.7);
+    background:rgba(255,255,255,0.2);
     transform:translateY(-2px);
 }
 
@@ -125,7 +125,7 @@ nav a:hover{
 }
 
 .card h3{
-    color:#4a7c8c;
+    color:#3498db;
     margin-bottom:10px;
 }
 
@@ -137,7 +137,7 @@ textarea{
     padding:12px;
     margin-top:6px;
     margin-bottom:12px;
-    border:1px solid #cde7f0;
+    border:1px solid #3498db;
     border-radius:8px;
     font-size:14px;
     transition:all 0.3s ease;
@@ -147,14 +147,14 @@ input:focus,
 select:focus,
 textarea:focus{
     outline:none;
-    border-color:#8ecae6;
-    box-shadow:0 0 10px rgba(142,202,230,0.5);
+    border-color:#3498db;
+    box-shadow:0 0 10px rgba(52,152,219,0.4);
     transform:scale(1.01);
 }
 
 /* Buttons */
 button{
-    background:#8ecae6;
+    background:#3498db;
     color:white;
     border:none;
     padding:12px 20px;
@@ -166,7 +166,7 @@ button{
 }
 
 button:hover{
-    background:#74b9d6;
+    background:#3498db;
     transform:translateY(-2px);
     box-shadow:0 5px 15px rgba(0,0,0,0.15);
 }
@@ -188,30 +188,29 @@ table{
 }
 
 table th{
-    background:#8ecae6;
+    background:#3498db;
     color:white;
     padding:12px;
 }
 
 table td{
     padding:12px;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #ddd;
     transition:background 0.3s ease;
 }
 
 table tr:nth-child(even){
-    background:#f4fbff;
+    background:#f4f9fd;
 }
 
 table tr:hover{
-    background:#eaf7fc;
-    transform:scale(1.01);
+    background:#e3f2fd;
 }
 
 /* Footer */
 .footer{
-    background:linear-gradient(135deg,#b8e3ff,#d8f3dc);
-    color:#2d4f5a;
+    background:#3498db;
+    color:white;
     text-align:center;
     padding:15px;
     margin-top:30px;
