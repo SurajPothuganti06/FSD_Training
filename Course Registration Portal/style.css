@@ -1,0 +1,29 @@
+body{
+font-family:Arial,sans-serif;
+}
+
+.card{
+box-shadow:0px 0px 10px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.carousel-caption{
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
+}
+
+footer a{
+text-decoration:none;
+color:white;
+}
+
+form{
+background:#f8f9fa;
+padding:20px;
+border-radius:10px;
+}
