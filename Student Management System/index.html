@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management Portal</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            🎓 College Portal
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
+                        Courses
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">CSE</a></li>
+                        <li><a class="dropdown-item" href="#">ECE</a></li>
+                        <li><a class="dropdown-item" href="#">EEE</a></li>
+                        <li><a class="dropdown-item" href="#">Mechanical</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item ms-2">
+                    <button class="btn btn-light">
+                        Login
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center text-white">
+    <div class="container py-5">
+
+        <h1 class="display-4 fw-bold">
+            Welcome to Student Management Portal
+        </h1>
+
+        <p class="lead mt-3">
+            Manage student records, attendance,
+            results and profiles through a modern
+            and responsive web portal.
+        </p>
+
+        <a href="register.html" class="btn btn-warning btn-lg mt-3">
+            Register Now
+        </a>
+
+    </div>
+</section>
+
+<!-- Carousel -->
+<div class="container mt-5">
+
+    <div id="collegeCarousel"
+         class="carousel slide"
+         data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/1200/400?1"
+                     class="d-block w-100"
+                     alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1200/400?2"
+                     class="d-block w-100"
+                     alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1200/400?3"
+                     class="d-block w-100"
+                     alt="">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#collegeCarousel"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#collegeCarousel"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+</div>
+
+<!-- About -->
+<section id="about" class="container my-5">
+
+    <h2 class="text-center mb-4">
+        About Our College
+    </h2>
+
+    <p class="text-center">
+        Our institution provides quality education
+        with excellent placement opportunities,
+        experienced faculty and advanced learning
+        facilities for students.
+    </p>
+
+</section>
+
+<!-- Announcements Alert -->
+<div class="container">
+
+    <div class="alert alert-success alert-dismissible fade show">
+
+        <strong>Announcement!</strong>
+
+        Admissions are open for the academic year 2026.
+
+        <button class="btn-close"
+                data-bs-dismiss="alert">
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Features -->
+<section class="container my-5">
+
+    <h2 class="text-center mb-5">
+        Portal Features
+    </h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow">
+
+                <img src="https://picsum.photos/400/250?4"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Student Registration
+                    </h5>
+
+                    <p class="card-text">
+                        Register students with complete
+                        profile details and documents.
+                    </p>
+
+                    <a href="register.html"
+                       class="btn btn-primary">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow">
+
+                <img src="https://picsum.photos/400/250?5"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Attendance Management
+                    </h5>
+
+                    <p class="card-text">
+                        Monitor student attendance and
+                        generate reports easily.
+                    </p>
+
+                    <button class="btn btn-success">
+                        Learn More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow">
+
+                <img src="https://picsum.photos/400/250?6"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Results Management
+                    </h5>
+
+                    <p class="card-text">
+                        Access student academic records
+                        and performance analytics.
+                    </p>
+
+                    <button class="btn btn-danger">
+                        Learn More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ Accordion -->
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Frequently Asked Questions
+    </h2>
+
+    <div class="accordion" id="faq">
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+
+                    How do I register?
+
+                </button>
+
+            </h2>
+
+            <div id="faq1"
+                 class="accordion-collapse collapse show"
+                 data-bs-parent="#faq">
+
+                <div class="accordion-body">
+                    Click Register Now and fill the form.
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+
+                    How can I view attendance?
+
+                </button>
+
+            </h2>
+
+            <div id="faq2"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#faq">
+
+                <div class="accordion-body">
+                    Attendance details are available on dashboard.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Modal Button -->
+<div class="container text-center my-5">
+
+    <button class="btn btn-info"
+            data-bs-toggle="modal"
+            data-bs-target="#infoModal">
+
+        View Important Notice
+
+    </button>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade"
+     id="infoModal">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Important Notice
+                </h5>
+
+                <button class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+                Semester examinations will begin next month.
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                    Close
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+
+    <p>
+        © 2026 Student Management Portal
+    </p>
+
+    <div>
+
+        <a href="#" class="text-white mx-2">
+            Facebook
+        </a>
+
+        <a href="#" class="text-white mx-2">
+            Instagram
+        </a>
+
+        <a href="#" class="text-white mx-2">
+            LinkedIn
+        </a>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
